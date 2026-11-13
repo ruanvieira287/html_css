@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse; /* Separate: separa as cedulas. Collapse: coloca as cedulas*/
+        }
+
+
+        td{
+            
+            border: 1px solid black;
+            padding: 8px; 
+            text-align: center; /*Alinhamento Horizontal: direita, centro e esquerda*/
+            vertical-align: middle; /*Alinhamento Vertical: Cima, meio e baixo*/
+        }
+
+        .numero{
+            text-align: right; /*Por padrão todo numero no excel fica na direita, e podemos configurar ela aqui*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (Simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+
+
+    -->
+    <table>
+         <tr> <!-- Primeira linha -->
+            <td>A1</td> <!--Celulas-->
+            <td>B1</td> <!--Celulas-->
+            <td>C1</td> <!--Celulas-->
+         </tr>
+
+         <tr> <!-- Segunda linha -->
+            <td>A2</td><!--Celulas-->
+            <td>B2</td><!--Celulas-->
+            <td class="numero">C2</td><!--Celulas-->
+         </tr>
+
+         <tr> <!-- Terceira linha -->
+            <td>A3</td><!--Celulas-->
+            <td class="numero">B3</td><!--Celulas-->
+            <td>C3</td><!--Celulas-->
+         </tr>
+
+         <tr> <!-- Quarta linha -->
+            <td>A4</td><!--Celulas-->
+            <td>B4</td><!--Celulas-->
+            <td>C4</td><!--Celulas-->
+         </tr>
+    </table>
+</body>
+</html>
