@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 2px solid black;
+            padding: 10px;
+            
+            
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(211, 211, 211);
+        }
+
+        thead, tfoot{
+            background-color: rgba(62, 62, 62, 0.667);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(62, 62, 62, 0.667);
+        }
+        /*Odd= Impar / even= par*/
+        /*Se o fundo da tabela for branco, não é necessario fazer as configurações de odd e even com branco e lightgrey. Posso usar somente 2n. Mas se estiver trabalhando com imagem de fundo é necessario*/
+
+
+        tbody > tr:nth-child(odd){/*2n-1*/
+            background-color: lightgrey;
+
+        }
+
+        tbody > tr:nth-child(even){/*2n*/
+            background-color: white;
+
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--
+     ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            caption
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+    -->
+
+    <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total De Habitantes</th>
+                <td class="numero"><strong>214 211 951</strong></td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 179 008</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 460 311</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 225 410</td>
+             </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="numero">14 889 472</td>
+             </tr>
+             <tr>
+                <td> Paraná</td>
+                <td class="numero">11 952 456</td>
+             </tr>
+             <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="numero"> 11 233 317</td>
+             </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="numero">95 83176</td>
+             </tr>
+             <tr>
+                <td>Ceará</td>
+                <td class="numero">93 02211</td>
+             </tr>
+             <tr>
+                <td>Pará</td>
+                <td class="numero">87 56324</td>
+             </tr>
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">8 312 759</td>
+             </tr>
+             <tr>
+                <td>Goiás</td>
+                <td class="numero">7 495 033</td>
+             </tr>
+             <tr>
+                <td>Maranhão</td>
+                <td class="numero">7 024 557</td>
+             </tr>
+             <tr>
+                <td>Amazonas</td>
+                <td class="numero">4 360 926</td>
+             </tr>
+             <tr>
+                <td>Paraíba</td>
+                <td class="numero">4 182 828</td>
+             </tr>
+             <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4 150 692</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3 950 330</td>
+             </tr>
+             <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 463 737</td>
+             </tr>
+             <tr>
+                <td>Piauí</td>
+                <td class="numero">3 392 617</td>
+             </tr>
+             <tr>
+                <td> Alagoas</td>
+                <td class="numero">3 221 128</td>
+             </tr>
+             <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">3 009 996</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 946 317</td>
+             </tr>
+             <tr>
+                <td> Sergipe</td>
+                <td class="numero">2 307 255</td>
+             </tr>
+             <tr>
+                <td> Rondônia</td>
+                <td class="numero">1 757 338</td>
+             </tr>
+             <tr>
+                <td>Tocantins</td>
+                <td class="numero">1 595 994</td>
+             </tr>
+             <tr>
+                <td> Acre</td>
+                <td class="numero">887 794	</td>
+             </tr>
+             <tr>
+                <td>Amapá</td>
+                <td class="numero">809 953</td>
+             </tr>
+             <tr>
+                <td> Roraima</td>
+                <td class="numero">761 012</td>
+             </tr>
+            
+
+        </tbody>
+
+    </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat labore corporis quo aperiam. Veritatis at molestiae obcaecati, quos, officia perspiciatis tenetur excepturi sapiente sint ea cumque itaque possimus. Mollitia, similique
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        ]Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias iste beatae debitis eveniet facere eum quia blanditiis veniam nesciunt totam commodi. Non fuga tenetur quisquam numquam, odit nisi amet?
+    </p>
+</body>
+</html>
