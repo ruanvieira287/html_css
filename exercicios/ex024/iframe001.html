@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+
+    <!--As css são soberanas em quesito de aplicação. Se eu configurar dentre de alguma tag e depois configurar as tags dentro da css, vai valer oque estiver dentro da css. Se caso não tiver nenhuma das duas configurações fica valendo o 300x150-->
+
+<style>
+
+    iframe{
+        height: 500;
+        width: 500;
+    }
+</style>
+</head>
+<body>
+    <h1>Testando o uso de Iframe</h1>
+ <!--src="https:www.cursoemvideo.com": Mostra o site do curso em video na pagina /  frameborder="0": Tira a Borda -->
+
+ <!--Existe alguns sites que tem algumas proteção para que terceiro não use eles no proprio site-->
+
+ <!--Tamanho padrao de um iframe é de 300x150-->
+    <p>Acessando o site do 
+
+        <!--scrolling: Ele servia para controlar se a barra de rolagem apareceria dentro do iframe. yes: mostra a barra de rolagem/ no: esconde a barra de rolagem/ auto: mostra quando necessário. O atributo scrolling está obsoleto no HTML5 e não deve ser utilizado em projetos novos. Hoje, o navegador controla a rolagem automaticamente. Se quiser controlar isso com CSS, pode usar:
+        
+        iframe {
+            overflow: auto;
+        }-->
+
+       <iframe src="https:www.cursoemvideo.com" frameborder="0" height="400" width="400" scrolling="no" ><a href="https://github.com/ruanvieira287" target="_blank">Acesse o link para assistir os videos</a></iframe>
+      
+        para aprender a programar</p>
+
+        <p> O repositorio do Ruan Vieira 
+
+            <iframe src="https://github.com/ruanvieira287" frameborder="0" height="400" width="400"><a href="https://github.com/ruanvieira287" target="_blank"> Acesse o linkpra ter acesso ao repositorio</a>
+            </iframe>
+            
+
+
+            é muito legal!</p>
+    
+</body>
+</html>
