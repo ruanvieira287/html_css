@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vh;
+            border: 2px solid black;
+            height: 450px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi iure optio quod illo doloremque obcaecati? Dolores vero quia aperiam, pariatur nemo deserunt a assumenda dolorum. Illum iure enim maxime dolor.</p>
+
+    <ul>
+        <li><a href="pagextras/pag001.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="pagextras/pag002.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="pagextras/pag003.html" target="frame">Terceira Pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, exercitationem laboriosam? Nemo ipsum non reiciendis est aut laborum harum commodi nam. Eaque molestias quod perferendis vero possimus sint asperiores dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus qui necessitatibus nisi pariatur alias minima? Temporibus, voluptas at natus consequatur dolore reprehenderit. Mollitia vero asperiores blanditiis in earum harum.</p>
+
+    <!--Parâmedo scrdoc: Dar para colocar Html dentro Do iframe vazio-->
+    <iframe
+     id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus magni atque optio deserunt omnis voluptas tempora aperiam corrupti nihil sint rem consequuntur reprehenderit laborum, suscipit iure enim necessitatibus explicabo.</p> ">Infelizmente seu navegador não é compatível
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, recusandae eveniet! Vel tenetur doloremque facere veniam unde similique fugit, tempore magnam ex deleniti, obcaecati alias debitis officia! Suscipit, reprehenderit aperiam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est ipsum doloribus, quas labore aspernatur illum ut et atque illo quia ullam suscipit cumque dignissimos minus, asperiores necessitatibus laboriosam perferendis.</p>
+</body>
+</html>
