@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu conteudo principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non nisi aliquid inventore, perferendis dicta eaque architecto repellat? Veniam pariatur cum dolor fuga minus perferendis vitae eveniet officia quisquam quos?</p>
+
+    <iframe src="pagextras/pag004.html" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referer"></iframe> <!--Aqui esta carregando a pagina pag004 dentrdo desse iframe-->
+
+    <!--A propriedade sandbox="sandbox" é um atributo HTML utilizado na tag <iframe> para adicionar uma camada de segurança ao conteúdo incorporado. Ele cria algumas restrições para a página que está sendo exibida dentro do iframe.
+        <iframe
+            src="pagina.html"
+            sandbox="sandbox">
+</iframe>Nesse caso, o navegador aplica várias restrições ao conteúdo dentro do iframe, como:
+- Impedir a execução de JavaScript.
+- Bloquear o envio de formulários.
+- Impedir que o conteúdo navegue pela página principal.
+- Restringir recursos que poderiam oferecer riscos à página original.
+    seu navegador não é compativel com isso
+    
+    <iframe
+    src="pagina.html"
+    sandbox="allow-scripts allow-forms">
+</iframe> Nesse exemplo:
+- allow-scripts: permite executar JavaScript.
+- allow-forms: permite enviar formulários.
+    
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro, ad officiis, natus voluptas consectetur recusandae iure rerum facilis sapiente consequatur deserunt eos sit quia tenetur libero alias. Quam, nisi?</p>
+    
+</body>
+</html>
